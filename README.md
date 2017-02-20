@@ -1,2 +1,2 @@
 # wabxq.github.io
-wxhyz
+中国帝王秦始皇的介绍
