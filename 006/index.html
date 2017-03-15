@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格</title>
+	  <style>
+	  .biaoti{
+	  	font-family: 楷体;
+	  	font-size: 30px;
+	  }
+    .biaoge {
+        width: 650px;
+        height: 300px;
+        border-collapse: collapse;
+    }
+     .b1 th{
+         background-color: rgba(222,0,200,1);
+         color:rgba(255,255,255,.9);
+       }
+		.biaoge td, .biaoge th{
+			border: 1px solid rgba(0,0,0,.2);
+			text-align: center;
+            padding:5px;
+		}
+        .biaoge tbody tr td{
+            color: hsl(100,100%,50%);
+        }
+    </style>
+</head>
+<body>
+	<table class="biaoge">
+		<caption class="biaoti">工作日志表</caption>
+		<thead class="b1">
+			<tr>
+				<th colspan="3" >记录\分类</th>
+				<th>工作项目记录</th>
+				<th>完成状况</th>
+				<th>待解决问题</th>
+				<th>工作时间量</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td rowspan="12">工作内容</td>
+				<td rowspan="10">日常例行工作</td>
+				<td rowspan="5">上午</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td rowspan="5">下午</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td colspan="2">当日工作总结</td>
+				<td colspan="4"></td>
+			</tr>
+			<tr>
+				<td colspan="2">明日工作展望</td>
+				<td colspan="4"></td>
+			</tr>
+			<tr>
+				<td colspan="3">建议或说明事项</td>
+				<td colspan="4"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
