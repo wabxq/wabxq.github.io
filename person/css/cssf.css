@@ -1,0 +1,109 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	padding: 0;
+	margin: 0;
+	background: url(http://img1.3lian.com/2015/a2/90/d/55.jpg) fixed;
+	background-size: 100%;
+}
+.k1 img{
+	width: 100px;
+	height: 100px;
+}
+#tou{
+	height: 60px;
+	width: 100%;
+	position: fixed;
+}
+.t1,.t2,.t3,.t4{
+	width: 100px;
+	height: 40px;
+	margin: 7px 110px;
+	float: left;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 5px;
+	background-color: #C6E2FF;
+}
+.t1:hover,.t2:hover,.t3:hover,.t4:hover{
+	border-radius: 20px;
+}
+#tou a:link,visited{
+	color: #000;
+	transition: all 1s;
+	text-decoration: none;
+}
+#tou a:hover{
+	color: #FF7F24;
+	text-decoration: underline;
+}
+#tou a:active{
+	color: #adff2f;
+}
+#kj{
+	width: 900px;
+	margin: auto;
+}
+header,footer{
+	margin: 2px 0;
+	height: 200px;
+}
+section{
+	min-width: 500px;
+}
+section div{
+	width: 400px;
+	min-height: 200px;
+	margin: auto;
+	border: 1px solid #000;
+}
+section h2{
+	text-align: center;
+}
+section h3,p{
+	text-indent: 2em;
+	font-family:楷体；
+	font-size:20px;
+}
+header div{
+	margin: 18px;
+	width: 100px;
+	height: 128px;
+}
+.k1,.k2{
+	float: left;
+}
+.k1{
+	margin: 65px 0px 0px 100px;
+}
+.k2{
+	width: 150px;
+	margin: 80px 0px 0px 5px;
+}
+header h1{
+	padding: 20px;
+	margin: 60px 5px;
+}
+.f1,.f2,.f3{
+	width: 100px;
+	height: 100px;
+	margin: 10px 90px 0px;
+	float: left;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 0px;
+	transition: all 1s;
+} 
+.f1:hover,.f2:hover,.f3:hover{
+	background-color:#06c;
+	border-radius: 50px;
+	cursor: pointer;
+	}
+
+footer img{
+	width: 100px;
+	height: 100px;
+}
