@@ -1,0 +1,56 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0;
+	margin: 0;	
+	background: url(http://www.51zxw.net/bbs/UploadFile/2012-1/20121272035128267.jpg);
+	background-size: 100%;
+}
+#wrapper{
+	width: 800px;
+	margin: auto;
+}
+dl{
+	font-size: 20px;
+	font-family:楷体; 
+}
+h1{
+	text-align: center;
+}
+P{
+	text-align: center;
+}
+.c:link,visited{
+	color: #cd00cd;
+	transition: all 1s;
+}
+.c:hover{
+	color: #f0f800;
+	text-decoration: none;
+	background-color: #9a32cd;
+}
+.c:active{
+	color: #adff2f;
+}
+.c1:link,viaited {
+  	text-decoration: none;
+  	color: #b452cd;}
+.c1:hover {
+    text-decoration:underline;
+}
+.c1:active {
+  color: #000;
+}
+.c2:link,viaited {
+  	text-decoration: none;
+  	color: #f3c;
+ }
+.c2:hover {
+    color: #f00;
+}
+.c2:active {
+  color: #000;
+}
+
