@@ -11,6 +11,7 @@ body{
 	height: 60px;
 	width: 100%;
 	position: fixed;
+	background-color: rgba(0,0,0,.6);
 }
 .t1,.t2,.t3,.t4{
 	width: 100px;
