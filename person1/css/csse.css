@@ -1,0 +1,174 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	padding: 0;
+	margin: 0;
+	background: url(http://www.jinhua.gov.cn/picture/0/84481461889781851.jpg) fixed;
+	background-size: 100%;
+}
+#tou{
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,.6);
+}
+.t1,.t2,.t3,.t4{
+	width: 100px;
+	height: 40px;
+	margin: 7px 110px;
+	float: left;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 5px;
+	background-color: #C6E2FF;
+}
+.t1:hover,.t2:hover,.t3:hover,.t4:hover{
+	border-radius: 20px;
+}
+#tou a:link,visited{
+	color: #000;
+	transition: all 1s;
+	text-decoration: none;
+}
+#tou a:hover{
+	color: #FF7F24;
+	text-decoration: underline;
+}
+#tou a:active{
+	color: #adff2f;
+}
+#kj{
+	width: 900px;
+	margin: auto;
+	border: 1px solid #000;
+}header{
+	margin: 2px 0;
+	height: 350px;
+}
+header h1{
+	padding: 20px;
+	margin: 60px 5px;
+}
+.k1,.k2{
+	float: left;
+}
+.k1{
+	width:550px;
+	height: 250px;
+	margin: 70px 0px 0px 50px;
+}
+.k2{
+	margin: 18px 0px 0px -250px;
+	width: 250px;
+	height: 128px;
+}
+ nav{
+	width: 162px;
+	height: 300px;
+	position: fixed;
+	background-color: #ccf;
+	margin: 200px 0px 0px 55px;
+	border: 1px solid #000;
+
+}
+.n1 ul{
+	padding: 0;
+	list-style-type: none;
+}
+.n1 ul li a{
+	display: block;
+	text-decoration: none;
+	color: #000;
+	padding: 20px;
+	width: 160px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	margin-top: 2px;
+	background-color: #ccf;
+}
+.n1 ul li a::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 50px;
+	width: 10px;
+	background-color: #BAC358;
+	transition:all .5s;
+	z-index: -1;
+}
+.n1 ul li:nth-child(2) a::before{
+	background-color: #62BDCF;
+}
+.n1 ul li:nth-child(3) a::before{
+	background-color: #E05735;
+}
+.n1 ul li a:hover::before{
+	width: 160px;
+}
+
+.n2{
+	width: 60px;
+	height: 60px;
+	text-decoration: none;
+	margin: 500px 0px 0px 1250px;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 10px;
+	transition: all 1s;
+} 
+.n2:hover{
+	border-radius: 30px;
+	cursor: pointer;
+	}
+
+.s1{
+	width: 900px;
+	border: 1px solid #000;
+}
+section h2,h3{
+	text-align: center;
+}
+section p{
+	font-family:楷体；
+	font-size:20px;
+	text-indent:2em;
+	margin: 30px;
+}
+section img{
+	width: 300px;
+	height: 250px;
+	margin: 10px 0px 10px 10px;
+}
+section h4{
+	margin: 10px 0px 0px 20px;
+}
+footer{
+	margin: 2px 0;
+	height: 200px;
+	border: 1px solid #000;
+}
+.f1,.f2,.f3{
+	width: 100px;
+	height: 100px;
+	margin: 10px 90px 0px;
+	float: left;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 0px;
+	transition: all 1s;
+} 
+.f1:hover,.f2:hover,.f3:hover{
+	background-color:#06c;
+	border-radius: 50px;
+	cursor: pointer;
+	}
+
+footer img{
+	width: 100px;
+	height: 100px;
+}
