@@ -7,6 +7,11 @@ body{
 	background: url(http://www.jinhua.gov.cn/picture/0/84481461889781851.jpg) fixed;
 	background-size: 100%;
 }
+.t::after{
+	content: "";
+	display: table;
+	clear: both;
+}
 #tou{
 	height: 60px;
 	width: 100%;
@@ -114,7 +119,7 @@ header h1{
 	width: 60px;
 	height: 60px;
 	text-decoration: none;
-	margin: 500px 0px 0px 1250px;
+	margin: 600px 0px 0px 1350px;
 	text-align: center;
 	line-height: 60px;
 	border-radius: 10px;
@@ -123,6 +128,7 @@ header h1{
 .n2:hover{
 	border-radius: 30px;
 	cursor: pointer;
+	background-color: rgba(255,255,255,.5);
 	}
 
 .s1{
