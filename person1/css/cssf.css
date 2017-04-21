@@ -7,7 +7,17 @@ body{
 	background: url(http://img1.3lian.com/2015/a2/90/d/55.jpg) fixed;
 	background-size: 100%;
 }
-.c1::after,.c2::after,.c3::after{
+.c1::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.c2::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.c3::after{
 	content: "";
 	display: table;
 	clear: both;

@@ -7,7 +7,17 @@ body{
 	background: url(http://pic.58pic.com/58pic/15/78/93/74K58PICeUt_1024.jpg) fixed;
 	background-size: 100%;
 }
-.c1::after,.c2::after,.c3::after{
+.c1::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.c2::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.c3::after{
 	content: "";
 	display: table;
 	clear: both;

@@ -7,7 +7,17 @@ body{
 	background: url(http://www.jinhua.gov.cn/picture/0/84481461889781851.jpg) fixed;
 	background-size: 100%;
 }
-.c1::after,.c2::after,.c3::after{
+.c1::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.c2::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.c3::after{
 	content: "";
 	display: table;
 	clear: both;
