@@ -7,7 +7,7 @@ body{
 	background: url(http://img1.3lian.com/2015/a2/90/d/55.jpg) fixed;
 	background-size: 100%;
 }
-.t::after{
+.c1::after,.c2::after,.c3::after{
 	content: "";
 	display: table;
 	clear: both;
