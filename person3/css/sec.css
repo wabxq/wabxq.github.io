@@ -1,11 +1,7 @@
 body{
 	padding: 0;
 	margin: 0;
-<<<<<<< HEAD
 	background: url(../img/003.jpg) fixed;
-=======
-	background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1493823787427&di=3ef042c83c6f9911bac48f2fe5f0f66f&imgtype=0&src=http%3A%2F%2Fpic.baike.soso.com%2Fp%2F20140221%2F20140221045150-1438518263.jpg) fixed;
->>>>>>> origin/master
 	background-size: 100%;
 	
 }
