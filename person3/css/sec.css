@@ -1,7 +1,7 @@
 body{
 	padding: 0;
 	margin: 0;
-	background: url(img/003.jpg) fixed;
+	background: url(../img/003.jpg) fixed;
 	background-size: 100%;	
 }
 .menu{
