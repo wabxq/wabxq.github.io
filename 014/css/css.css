@@ -1,0 +1,54 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #39c;
+}
+form{
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: #fff;	
+	text-align: center;
+}
+form h3{
+	text-align: center;
+}
+#age,#email,#name{
+	border: 1px dashed #2cf;
+	outline: none;
+	width: 75%;
+	height: 40px;
+	margin: 10px 0;
+	text-indent: 1em;
+	/*transition: all .5s;*/
+}
+#age:hover,#email:hover,#name:hover{
+	border: 1px solid #2cf;
+	box-shadow: 0px 0px 8px 0px rgba(0,0,0,.5) inset;
+}
+#submit{
+	background-color: rgba(112,29,200,.9);	
+	width: 30%;
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	left: 30%;
+	right: 30%;
+	bottom: -20px;
+	border: none;
+	outline: none;
+	cursor: pointer
+	bottom: -40px;
+	letter-spacing: 0;	
+	transition: all .5s;
+}
+#submit:hover{
+	background-color: rgba(1,21,2,.9);	
+	color: #fff;
+	letter-spacing: 4px;
+}
