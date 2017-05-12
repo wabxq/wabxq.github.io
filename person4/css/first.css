@@ -1,0 +1,127 @@
+body{
+	padding: 0;
+	margin: 0;
+	background: url(../img/55.jpg) fixed;
+	background-repeat: no-repeat;
+	
+}
+.menu{
+	width: 100%;
+	min-width: 1000px;
+	height: 48px;
+	text-align: center;
+	position: fixed;
+	background: rgb(0,0,0);
+}
+.menu ul{
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.menu ul li{
+	display: inline-block;
+}
+.menu ul li a{
+	text-decoration: none;
+	text-align: left;
+	display: inline-block;
+	text-indent: 10px;
+	font-size: 20px;
+	color: #fff;
+	width: 200px;
+	height: 48px;
+	margin-right:20px ;
+	line-height: 48px;
+	border-left: 1px solid rgba(225,225,225,.3);	
+	position: relative;
+}
+.menu ul li:last-child a{
+	border-right: 1px solid rgba(225,225,225,.3);
+}
+.menu ul li a:hover{
+	color: #fff;
+}
+.menu{
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,.3);
+}
+.menu ul li a i{
+	margin-right: -10px;
+	transform: scale(0);
+	transition: all .5s;
+}
+.menu ul li a:hover i{
+	margin-right: 10px;
+	transform: scale(1);
+}
+.menu ul li a::after{
+	content: "";
+	top: 10%;
+	bottom: 0;
+	left: 10%;
+	right: 10%;
+	position: absolute;
+	border-radius: 100%;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+	z-index: -1;
+	transition: all .5s;
+}
+.menu ul li a:hover::after{
+	border-radius: 50%;
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,.8);
+}
+#kj{
+	width: 900px;
+	margin: auto;
+}
+#head div img{
+	margin: 70px 0px 0px 150px;
+	width: 200px;
+	height: 200px;
+}
+#head div strong{
+	margin: 0px 0px 0px 50px;
+	font-size: 33px;
+	font-family: 楷体;
+}
+#sect {
+	text-align: center;
+}
+#sect div{
+	margin-left:150px ;
+	border: 1px solid #000;
+	width: 500px;
+}
+#sect div p{
+	text-indent: 2em;
+	text-align: left;
+    
+}
+#sect,#foot{
+	margin-top:50px ;
+}
+.clearfix{
+	content: "";
+	display: table;
+	clear: both;
+}
+#foot img{
+	width: 100px;
+	height: 100px;
+}
+.f1,.f2,.f3{
+	width: 100px;
+	height: 100px;
+	margin: 10px 90px 0px;
+	float: left;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 0px;
+	transition: all 1s;
+} 
+.f1:hover,.f2:hover,.f3:hover{
+	background-color:#06c;
+	border-radius: 50px;
+	cursor: pointer;
+}
