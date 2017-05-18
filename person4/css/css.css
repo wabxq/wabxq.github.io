@@ -75,15 +75,23 @@ body{
 }
 #head div img{
 	margin: 70px 0px 0px 0px;
+<<<<<<< HEAD
 	width: 80px;
 	height: auto;
+=======
+	width: 250px;
+	height: 128px;
+>>>>>>> origin/master
 }
 #head div strong{
 	margin: 0px 0px 0px 50px;
 	font-size: 40px;
 	font-family: 楷体;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 #sect div h2{
 	text-align: left;
 }

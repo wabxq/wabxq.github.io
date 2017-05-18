@@ -97,6 +97,9 @@ input{
 	width: 700px;
 	height: 1550px;
 }
+p{
+	text-indent: 2em;
+}
 #contents {
 	width: 700px;
 	height: 1550px;
