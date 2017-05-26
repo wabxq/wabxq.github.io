@@ -1,3 +1,6 @@
+/*
+ * 整体部分
+ */
 *{
 	box-sizing: border-box;
 }
@@ -10,6 +13,14 @@ h1{
 a{
 	color: #000;
 	text-decoration: none;
+}
+h2{
+	margin-top: 50px;
+	color:#000;
+}
+p{
+	color:#000;
+	text-indent: 2em;
 }
 .clearfix{
 	content: "";
@@ -25,6 +36,9 @@ body{
 	width: 1200px;
 	margin: auto;
 }
+/*
+ * 开头部分
+ */
 header img{
 	width: 100px;
 	height: auto;
@@ -51,14 +65,6 @@ header ul li a{
 header ul li a:hover{
 	border: 1px solid #000;
 }
-h2{
-	margin-top: 50px;
-	color:#000;
-}
-p{
-	color:#000;
-	text-indent: 2em;
-}
 .ulexam li{
 	float: left;
 	width: 200px;
@@ -78,6 +84,9 @@ p{
 	display: table;
 	clear: both;
 }
+/*
+ * 图片部分
+ */
 .imageList {
 	max-width: 1200px;
 	margin: auto;
@@ -151,7 +160,6 @@ p{
 	height: 1px;
 	background-color: #fff;
 	position: absolute;
-	/*right: 0;*/
 	bottom: 42%;
 	right: -80%;
 }
@@ -188,6 +196,9 @@ p{
 .imageList figure:hover figcaption h3::after{
 	top: -248px;
 }
+/*
+ * 结尾部分
+ */
 footer dl dt{
 	padding:5px 20px;
 	margin-left: 40px;
