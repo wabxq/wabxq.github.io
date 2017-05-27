@@ -1,0 +1,98 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+/*
+ * 头部部分
+ */
+header{
+	width: 100%;
+	padding: 50px 200px ;
+	background-color: rgba(0,0,0,0);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	transition: all .5s;
+}
+header.on{
+	padding: 3px 0;
+	background-color: rgba(0,0,0,.8);
+}
+.logo{
+	float: left;
+}
+.logo img,
+.logo span{	
+	vertical-align: middle;	
+}
+.logo img{
+	font-size:2em;
+	margin: 0px 0px 0px 20px;
+}
+.logo span{
+	color: #fff;
+	font-size:3em;
+	font-family:  'Dancing Script', cursive;
+}
+.topMenu{
+	float: right;
+}
+.topMenu ul{
+	margin-top: 20px;
+	padding: 0;
+}
+.topMenu ul li{	
+	list-style-type: none;
+	float: left;
+	margin-left:50px ;
+}
+.topMenu ul li a{
+	color: #000;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+	transition: color .5s;
+}
+.topMenu ul li a:hover{
+	color: #339BEB;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+}
+/*
+ * 中间部分
+ */
+#banner{
+	min-height: 800px;
+	background: url(../img/banner.jpg) no-repeat center top;
+	background-size: cover;
+	margin-top: -21px;
+}
+.banner .word{
+	padding-top: 300px;
+	width: 800px;
+	margin: auto;
+}
+.banner .word h1{
+	color: #fff;
+	text-align: center;
+}
+.banner .word h1 span{
+	color:  #339BEB;
+}
+.banner .word p{
+	color: #fff;
+	text-align: left;
+}
