@@ -1,0 +1,188 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: simhei;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+/*
+ * 头部部分
+ */
+header{
+	width: 100%;
+	padding: 50px 200px ;
+	background-color: rgba(0,0,0,0);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	transition: all .5s;
+}
+header.on{
+	padding: 3px 200px;
+	background-color: rgba(0,0,0,.8);
+}
+.logo{
+	float: left;
+}
+.logo img,
+.logo span{	
+	vertical-align: middle;	
+}
+.logo img{
+	font-size:2em;
+	margin: 0px 0px 0px 20px;
+}
+.logo span{
+	color: #fff;
+	font-size:3em;
+	font-family: 'Dancing Script', cursive;
+}
+.topMenu{
+	float: right;
+}
+.topMenu ul{
+	margin-top: 20px;
+	padding: 0;
+}
+.topMenu ul li{	
+	list-style-type: none;
+	float: left;
+	margin-left:50px ;
+}
+.topMenu ul li a{
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+	transition: color .5s;
+}
+.topMenu ul li a:hover{
+	color: #339BEB;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+}
+/*
+ * 中间部分
+ */
+#banner{
+	background: url(../img/banner.jpg) no-repeat center top;
+	background-size: cover;
+}
+.banner .container{
+	max-width: 800px;
+	height: 180px;
+	padding: 1px;
+	color: #fff;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	line-height: 2em;
+	text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+}
+.banner .word h1{
+	color: #fff;
+	text-align: center;
+}
+.banner .word h1 strong{
+	color:  #339BEB;
+}
+.banner .word p{
+	color: #fff;
+	text-align: left;
+}
+.banner .word mark{
+	background-color: rgba(255,255,255,.7);
+	color: #000;
+	padding: 3px;
+}
+/*
+ * 关于我们
+ */
+section h2{
+	text-align: center;
+	margin-top: 50px;
+}
+section h2+p{
+	text-align: center;
+	margin-bottom: 80px;
+}
+#about{
+	margin: 10px 0px 50px;
+}
+#about .img{
+	width: 40%;
+	float: left;
+	margin-left: 9%;
+	
+}
+#about .img img{
+	width: 100%;
+	height: auto;
+}
+#about .note{
+	width: 40%;
+	float: right;
+	text-align: left;
+	line-height:2.3;
+	margin-right: 9%;
+}
+#about .note p:first-child{
+	padding: 0;	
+	margin-top: 0;
+}
+#about .note ol{
+	padding: 0;
+	list-style-type: none;
+	counter-reset: a;
+}
+#about .note li{
+	counter-increment: a;
+}
+#about .note li::before{
+	content: counter(a);
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 20px;
+	border: 1px dashed #000;
+	margin-right: 20px;
+	transition: transform .5s;
+}
+#about .note li:hover::before{
+	transform: translate(10px);
+}
+/*
+ * 我们的服务
+ */
+#service{
+	min-height: 600px;
+	background: url(../img/banner2.jpg) no-repeat center top;
+	background-size: cover;
+	color: #fff;
+	text-shadow: 1px 1px 0px rgba(0,0,0,.5);
+}
+#service h2{
+	padding-top: 50px;
+}
+/*#service li{
+	float: left;
+}
+#service i{
+	float: right;
+}*/
