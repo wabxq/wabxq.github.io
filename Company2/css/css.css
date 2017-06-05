@@ -172,17 +172,63 @@ section h2+p{
  */
 #service{
 	min-height: 600px;
-	background: url(../img/banner2.jpg) no-repeat center top;
+	background: url(../img/desktop.jpg) no-repeat center center;
 	background-size: cover;
-	color: #fff;
-	text-shadow: 1px 1px 0px rgba(0,0,0,.5);
+	position: relative;
 }
-#service h2{
+#service .container{
+	max-width: 1300px;
+	margin: auto;
+	z-index: 2;
+	position: relative;
+}
+#service .container h2{
 	padding-top: 50px;
 }
-/*#service li{
-	float: left;
+#service::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	box-shadow: inset 0px 0px 100px 20px rgba(0,0,0,.5);
+	z-index: 1;
 }
-#service i{
+#service li{
+	content: "";
+	display: table;
+	clear: both;
+}
+#service li{
+	float: left;
+	width: 45%;
+	margin-right: 4%;
+	text-align: right;
+	cursor: pointer;
+	min-height: 110px;
+}
+#service li:nth-child(2n){
 	float: right;
-}*/
+	margin-top:-111px ;
+	text-align: left;
+}
+#service li i{
+	padding: 20px 0px 5px 30px;
+	float: right;
+	transition: transform .5s,color .5s;
+}
+#service li i h3{
+	display: inline-block;
+	margin: 0;
+}
+#service li:nth-child(2n) i{
+	padding: 20px 30px 5px 0px;
+	float: left;
+	text-align: left;
+	
+}
+#service li:hover i{
+	transform: scale(1.2) rotate(5deg);
+	color: #339BEB;
+}
