@@ -211,7 +211,7 @@ section h2+p{
 }
 #service li:nth-child(2n){
 	float: right;
-	margin-top:-111px ;
+	margin-top:-165px ;
 	text-align: left;
 }
 #service li i{
