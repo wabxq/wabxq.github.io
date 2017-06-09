@@ -1,0 +1,364 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: simhei;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+/*
+ * 头部部分
+ */
+header{
+	width: 100%;
+	padding: 50px 200px ;
+	background-color: rgba(0,0,0,0);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	transition: all .5s;
+}
+header.on{
+	padding: 3px 200px;
+	background-color: rgba(0,0,0,.8);
+}
+.logo{
+	float: left;
+}
+.logo img,
+.logo span{	
+	vertical-align: middle;	
+}
+.logo img{
+	font-size:2em;
+	margin: 0px 0px 0px 20px;
+}
+.logo span{
+	color: #fff;
+	font-size:3em;
+	font-family: 'Dancing Script', cursive;
+}
+.topMenu{
+	float: right;
+}
+.topMenu ul{
+	margin-top: 20px;
+	padding: 0;
+}
+.topMenu ul li{	
+	list-style-type: none;
+	float: left;
+	margin-left:50px ;
+}
+.topMenu ul li a{
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+	transition: color .5s;
+}
+.topMenu ul li:hover a,
+.topMenu ul li.active a{
+	color: #339BEB;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+}
+/*
+ * 中间部分
+ */
+#banner{
+	background: url(../img/banner.jpg) no-repeat center top;
+	background-size: cover;
+}
+.banner .container{
+	max-width: 800px;
+	height: 180px;
+	padding: 1px;
+	color: #fff;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	line-height: 2em;
+	text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+}
+.banner .word h1{
+	color: #fff;
+	text-align: center;
+}
+.banner .word h1 strong{
+	color:  #339BEB;
+}
+.banner .word p{
+	color: #fff;
+	text-align: left;
+}
+.banner .word mark{
+	background-color: rgba(255,255,255,.7);
+	color: #000;
+	padding: 3px;
+}
+/*
+ * 关于我们
+ */
+section h2{
+	text-align: center;
+	margin-top: 50px;
+}
+section h2+p{
+	text-align: center;
+	margin-bottom: 80px;
+}
+#about{
+	margin: 10px 0px 50px;
+}
+#about .img{
+	width: 40%;
+	float: left;
+	margin-left: 9%;
+	
+}
+#about .img img{
+	width: 100%;
+	height: auto;
+}
+#about .note{
+	width: 40%;
+	float: right;
+	text-align: left;
+	line-height:2.3;
+	margin-right: 9%;
+}
+#about .note p:first-child{
+	padding: 0;	
+	margin-top: 0;
+}
+#about .note ol{
+	padding: 0;
+	list-style-type: none;
+	counter-reset: a;
+}
+#about .note li{
+	counter-increment: a;
+}
+#about .note li::before{
+	content: counter(a);
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 20px;
+	border: 1px dashed #000;
+	margin-right: 20px;
+	transition: transform .5s;
+}
+#about .note li:hover::before{
+	transform: translate(10px);
+}
+/*
+ * 我们的服务
+ */
+#service{
+	min-height: 600px;
+	background: url(../img/desktop.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+#service .container{
+	max-width: 1300px;
+	margin: auto;
+	z-index: 2;
+	position: relative;
+}
+#service .container h2{
+	padding-top: 50px;
+}
+#service::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	box-shadow: inset 0px 0px 100px 20px rgba(0,0,0,.5);
+	z-index: 1;
+}
+#service li{
+	content: "";
+	display: table;
+	clear: both;
+}
+#service li{
+	float: left;
+	width: 45%;
+	margin-right: 4%;
+	text-align: right;
+	cursor: pointer;
+	min-height: 110px;
+}
+#service li:nth-child(2n){
+	float: right;
+	margin-top:-111px ;
+	text-align: left;
+}
+#service li i{
+	padding: 20px 0px 5px 30px;
+	float: right;
+	transition: transform .5s,color .5s;
+}
+#service li i h3{
+	display: inline-block;
+	margin: 0;
+}
+#service li:nth-child(2n) i{
+	padding: 20px 30px 5px 0px;
+	float: left;
+	text-align: left;
+	
+}
+#service li:hover i{
+	transform: scale(1.2) rotate(5deg);
+	color: #339BEB;
+}
+/*
+ * 案例部分
+ */
+.case{
+	width: 1200px;
+	margin: auto;
+}
+.case figure{
+	width: 23%;
+	margin:10px calc(8%/4) 10px 0px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.case figure:nth-child(4n){
+	margin-right: 0px;
+}
+.case figure img{
+	width: 100%;
+	height: auto;
+	transition: transform .5s ease-out .3s;
+}
+.case figure:hover img{
+	transform: scale(1.5) rotate(10deg);
+}
+.case figure figcaption{
+	left: 20px;
+	right: 20px;
+	top: 182px;
+	bottom: 20px;
+	position: absolute;
+	background-color: rgba(255,255,255,.4)
+}
+.time{
+	margin: 10px;
+}
+.month{
+	width: 50px;
+	height: 26px;
+	background-color: #3286EE;
+	text-align: center;
+	line-height: 26px;
+}
+.year{
+	width: 50px;
+	height: 26px;
+	background-color: #339BEB;
+	text-align: center;
+	line-height: 26px;
+}
+.case figure figcaption h3{
+	margin: -45px 0px 0px 70px;
+	
+}
+.data{
+	width: 100%;	
+	text-align: right;
+	background-color: rgba(0,0,0,.2);
+}
+/*
+ * 联系我们
+ */
+#contact{
+	background: url(../img/android-1869510_1920.jpg) no-repeat center top;
+	background-size: cover;
+}
+.container{
+	width: 1200px;
+	margin: auto;
+}
+.container h2,p,li{
+	line-height: 2em;
+	color: #fff;
+	font-size: 18px;
+}
+.container h2{
+	padding: 30px;
+	margin-bottom: 0px;
+}
+.container p{
+	margin-bottom: 20px;
+}
+.left{
+	float: left;
+	width: 48%;
+	margin-right: 10px;
+}
+.left li{	
+	list-style-type: none;
+}
+.right{
+	float: right;
+	width: 50%;
+	margin-left: 10px;
+}
+.right input{
+	width: 500px;
+	height: 40px;
+	opacity: .5;
+	border:none;
+	border-radius: 10px;
+	margin-top: 26px;
+}
+.right input:last-child{
+	margin-bottom: 50px;
+}
+.right textarea{
+	width: 500px;
+	height: 60px;
+	opacity: .5;
+	border:none;
+	margin-top: 30px;
+	border-radius: 10px;
+}
+::-webkit-input-placeholder{
+	color: #000;
+	padding-left: 20px;
+}
+::-moz-placeholder{
+	color: #000;
+	padding-left: 20px;
+}
+/*
+ * 尾部
+ */
+footer p{
+	color: #000;
+	text-align: center;
+}
