@@ -303,16 +303,18 @@ section h2+p{
 	width: 1200px;
 	margin: auto;
 }
-.container h2,p,li{
+.contact h2,
+.contact p,
+.contact li{
 	line-height: 2em;
 	color: #fff;
 	font-size: 18px;
 }
-.container h2{
+.contact h2{
 	padding: 30px;
 	margin-bottom: 0px;
 }
-.container p{
+.contact p{
 	margin-bottom: 20px;
 }
 .left{
