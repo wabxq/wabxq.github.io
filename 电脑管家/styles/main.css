@@ -1,0 +1,172 @@
+/*
+ * 全局设置
+ */
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.conter{
+	width: 1200px;
+	margin: auto;
+}
+*{
+	padding: 0;
+	margin: 0;
+box-sizing: border-box;
+}
+li{
+	list-style-type: none;	
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+/*
+ *头部设置 
+ */
+header .logo{
+	float: left;
+	margin: 20px 0px 0px 0px;
+}
+header .menu{
+	float: right;
+}
+header .menu ul{
+	position: relative;
+}
+header .menu li{
+	
+	float: left;
+	width: 100px;
+	height: 90px;
+	text-align: center;
+	line-height: 90px;
+	border-left: 1px solid #ddd;
+	
+	transition: border .5s;
+}
+
+header .menu li:nth-child(5){
+	border-right: 1px solid #ddd;
+}
+header .menu li.k{
+	position: absolute;
+	height: 4px ;
+	width: 100px;
+	background-color: blue;
+	left: 0;
+	z-index: 3;
+	transition: left .5s;
+}
+header .menu li:nth-child(2):hover~li.k{
+	left: 100px;
+}
+header .menu li:nth-child(3):hover~li.k{
+	left: 200px;
+}
+header .menu li:nth-child(4):hover~li.k{
+	left: 300px;
+}
+header .menu li:nth-child(5):hover~li.k{
+	left: 400px;
+}
+/*
+ * 中间设置
+ */
+.about{
+	background: url(../images/banner2.jpg) no-repeat top center;
+	width: 100%;
+	height: 550px;
+}
+.about h2,
+.about p,
+.about a{
+	color: #FFFFFF;
+	text-align: right;
+}
+.about h2{
+	padding: 140px 610px 50px 0px ;
+}
+.about p{
+	padding: 35px 400px 0px 0px ;
+}
+.about p:last-child{
+	padding: 65px 465px 0px 0px ;
+}
+.about a:hover{
+	text-decoration: underline;
+}
+.about .imga{
+	margin: 28px 0px -23px 811px ;
+	width: 240px;
+	height: 70px;
+	overflow: hidden;
+	position: relative;
+}
+.about img{
+	position: absolute;
+	top: 0px;	
+}
+.about img:hover{
+	top: -75px;	
+}
+/*
+ * 介绍模块设置
+ */
+.introduce{
+	margin-top: 30px;
+}
+.introduce figure{
+	width: 32%;
+	float: left;
+	margin: calc(4%/6);
+	position: relative;
+}
+.introduce figure img{
+	max-width: 100%;
+}
+.introduce figure figcaption h3{
+	width: 82%;
+	height: 30px;
+	background-color: rgba(255,255,255,.5);
+	position: absolute;
+	top: 160px;
+	margin: auto;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+}
+.active,
+.line{
+	border-top: 1px solid #ddd;
+	margin-top:30px ;
+}
+.active h2,
+.line h2{
+	border-left: 2px solid #0000FF;
+	margin: 10px;
+	padding-left: 10px;
+}
+.active p,
+.line p{
+	display: inline-block;
+}
+.active p{
+	width: 290px;
+	margin:10px 0px 10px 0px;
+}
+.line p{
+	width: 100px;
+	margin:10px 10px 10px 0px;
+}
+/*
+ * 尾部设置
+ */
+footer{
+	text-align: center;
+	margin:30px 0px 30px 0px;
+}
+footer .m{
+	color: #999;
+}
