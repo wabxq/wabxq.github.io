@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+		<!DOCTYPE html>
+		<html>
+
+		<head>
+			<meta charset="utf-8" />
+			<title>换肤小游戏</title>
+			<style type="text/css">
+				#firdiv {
+					width: 50px;
+					height: 50px;
+					position: absolute;
+					left: 500px;
+					top: 100px;
+					background-color: gray;
+				}
+				
+				#secdiv {
+					width: 50px;
+					height: 50px;
+					position: absolute;
+					left: 600px;
+					top: 100px;
+					background-color: aqua;
+				}
+				#thirdiv {
+					width: 50px;
+					height: 50px;
+					position: absolute;
+					left: 700px;
+					top: 100px;
+					background-color: gray;
+				}
+				
+				#fourdiv {
+					width: 50px;
+					height: 50px;
+					position: absolute;
+					left: 800px;
+					top: 100px;
+					background-color: aqua;
+				}
+				#word{
+					width: 500px;
+					height: 400px;
+					position: absolute;
+					left: 500px;
+					top: 150px;
+					border: 1px solid #000;
+				}
+				#word p{
+					font-size: 20px;
+					line-height: 1.5em;
+					font-family: "楷体";
+					text-indent: 2em;
+				}
+				h1{
+					text-align: center;
+				}
+			</style>
+		</head>
+
+		<body>
+			<h1>换肤小游戏</h1>
+			<div id="menu">
+			<div id="firdiv"></div>
+			<div id="secdiv"></div>
+			<img src="img/001.jpg" id="thirdiv"/>
+			<img src="img/002.jpg" id="fourdiv"/>
+			</div>
+			<div id="word">
+				<p>一程山水，一段故事。是谁在西湖冬日里留下断桥残雪的清幽？是谁在圆月当空时咏起“千里共婵娟”的夙愿？是谁在康桥的柔波中吹响了别离的笙箫？是谁在寂寥的雨巷里停滞了丁香般的倩影？斯人已不知何处，但他们留下了为世人所赞颂的美丽。闭上眼，只觉得一股清气扑面而来，这清气，将永远在历史的长河中，滋润万物。那我们，该留下些什么呢？只希望，我们留下的，是缕缕清气。
+				</p>
+				<p>烟花易冷，世事无常。我们阻止不了生离死别，但我们可以在经过的旅程中留下缕缕清气。</p>
+			</div>
+			<script type="text/javascript">
+				var a = document.getElementById("firdiv");
+				var b = document.getElementById("secdiv");
+				var c = document.getElementById("thirdiv");
+				var d = document.getElementById("fourdiv");
+				var e = document.getElementById("but");
+				var l = 500;
+				var t = 150;
+				var w = 500;
+				var h = 400;
+				firdiv.onclick = function() {				
+					firdiv.style.left = l + "px";
+					firdiv.style.top = t + "px";
+					firdiv.style.width = w + "px";
+					firdiv.style.height = h + "px";
+					firdiv.style.transition = "1s";
+					
+					fourdiv.style.left = "800px";
+					fourdiv.style.top = "100px";
+					fourdiv.style.width = "50px";
+					fourdiv.style.height = "50px";
+					
+					secdiv.style.left = "600px";
+					secdiv.style.top = "100px";
+					secdiv.style.width = "50px";
+					secdiv.style.height = "50px";
+					
+					thirdiv.style.left = "700px";
+					thirdiv.style.top = "100px";
+					thirdiv.style.width = "50px";
+					thirdiv.style.height = "50px";
+				}
+				secdiv.onclick = function() {				
+					secdiv.style.left = l + "px";
+					secdiv.style.top = t + "px";
+					secdiv.style.width = w + "px";
+					secdiv.style.height = h + "px";
+					secdiv.style.transition = "1s";
+					
+					firdiv.style.left = "500px";
+					firdiv.style.top = "100px";
+					firdiv.style.width = "50px";
+					firdiv.style.height = "50px";
+					
+					thirdiv.style.left = "700px";
+					thirdiv.style.top = "100px";
+					thirdiv.style.width = "50px";
+					thirdiv.style.height = "50px";
+					
+					fourdiv.style.left = "800px";
+					fourdiv.style.top = "100px";
+					fourdiv.style.width = "50px";
+					fourdiv.style.height = "50px";
+				}
+				thirdiv.onclick = function() {				
+					thirdiv.style.left = l + "px";
+					thirdiv.style.top = t + "px";
+					thirdiv.style.width = w + "px";
+					thirdiv.style.height = h + "px";
+					thirdiv.style.transition = "1s";
+					
+					secdiv.style.left = "600px";
+					secdiv.style.top = "100px";
+					secdiv.style.width = "50px";
+					secdiv.style.height = "50px";
+					
+					firdiv.style.left = "500px";
+					firdiv.style.top = "100px";
+					firdiv.style.width = "50px";
+					firdiv.style.height = "50px";
+					
+					fourdiv.style.left = "800px";
+					fourdiv.style.top = "100px";
+					fourdiv.style.width = "50px";
+					fourdiv.style.height = "50px";
+				}
+				fourdiv.onclick = function() {				
+					fourdiv.style.left = l + "px";
+					fourdiv.style.top = t + "px";
+					fourdiv.style.width = w + "px";
+					fourdiv.style.height = h + "px";
+					fourdiv.style.transition = "1s";
+					
+					thirdiv.style.left = "700px";
+					thirdiv.style.top = "100px";
+					thirdiv.style.width = "50px";
+					thirdiv.style.height = "50px";
+					
+					firdiv.style.left = "500px";
+					firdiv.style.top = "100px";
+					firdiv.style.width = "50px";
+					firdiv.style.height = "50px";
+					
+					secdiv.style.left = "600px";
+					secdiv.style.top = "100px";
+					secdiv.style.width = "50px";
+					secdiv.style.height = "50px";
+				}
+			</script>
+		</body>
+
+		</html>
+
+	</body>
+
+</html>
