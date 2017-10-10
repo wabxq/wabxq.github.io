@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>动态时针</title>
+	</head>
+	<style type="text/css">
+		ul{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: cadetblue
+		}
+		#clock{
+			width: 500px;
+			height: 506px;
+			background: url(img/clock.png);
+			background-size: 100% 100%;
+			position: relative;
+			margin-left: 450px;
+			margin-top: 50px;
+		}
+		#hour{
+			width: 10px;
+			height: 100px;
+			background-color: black;
+			position: absolute;
+			top: 150px;
+			left: 245px;
+			z-index: 2;
+			-webkit-transform-origin: 50% 100%;
+		}
+		#minute{
+			width: 5px;
+			height: 160px;
+			background-color: black;
+			position: absolute;
+			top: 92px;
+			left: 250px;
+			z-index: 2;
+			-webkit-transform-origin: 50% 100%;
+		}
+		#second{
+			width: 3px;
+			height:190px;
+			background-color: blue;
+			position: absolute;
+			top: 62px;
+			left: 248px;
+			z-index: 2;
+			-webkit-transform-origin: 50% 100%;
+		}
+		#date{
+			width: 150px;
+			height: 50px;
+			position: absolute;
+			top: 377px;
+			left: 340px;
+			font-size: 30px;
+			font-family: "calisto mt";
+			color: #fff;
+		}
+		.point{
+			width: 15px;
+			height: 15px;
+			border-radius:100% ;
+			border: 1px solid #000;
+			background-color: #000;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+		.black{
+			width: 151px;
+			height: 40px;
+			position: absolute;
+			top: 190px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+		.black li{
+			width: 35px;
+			height: 100%;
+			display: inline-block;
+			margin-right:10px ;
+			background-color: #000;
+			color: #fff;
+			font-size: 24px;
+			line-height: 40px;
+			text-align: center;
+		}
+		.black li:last-child{
+			margin-right: 0;
+		}
+		#date{
+			width: 140px;
+			height: 25px;
+			position: absolute;
+			/*border: 1px solid #000;*/
+			top: 220px;
+			bottom: 0;
+			left: 40px;
+			right: 0px;
+			margin: auto;
+			color: blue;
+			font-size: 15px;
+			font-family: rockwell;
+		}
+	</style>
+	<body>
+		<div id="clock">
+			<div id="hour"></div>
+			<div id="minute"></div>
+			<div id="second"></div>
+			<div class="point"></div>
+			<ul class="black">
+				<li id="oh"></li>
+				<li id="om"></li>
+				<li id="os"></li>
+			</ul>
+		</div>
+		<div id="date"></div>
+		<script type="text/javascript">
+			var c=document.getElementById("clock");
+			var h=document.getElementById("hour");
+			var m=document.getElementById("minute");
+			var s=document.getElementById("second");
+			var day;
+			function clockTime(){
+				day=new Date();
+				var hou=(day.getHours()+day.getMinutes()/60+day.getSeconds()/3600)*30;
+				var min=(day.getMinutes()+day.getSeconds()/60)*6;
+				var sec=day.getSeconds()*6;
+				var w=day.getDay();
+				var weekday =["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+				
+				h.style.webkitTransform="rotate("+hou+"deg)";
+				m.style.webkitTransform="rotate("+min+"deg)";
+				s.style.webkitTransform="rotate("+sec+"deg)";
+				document.getElementById("oh").innerHTML=day.getHours();
+				document.getElementById("om").innerHTML=clocktime(day.getMinutes());
+				document.getElementById("os").innerHTML=clocktime(day.getSeconds());
+				document.getElementById("date").innerHTML=day.getFullYear()+"-"+(day.getMonth()+1)+"-"+day.getDate()+"   "+weekday[w];
+			}
+			function clocktime(num){
+				if(num<10){
+					num="0"+num;
+				}
+				return num;
+			}
+			setInterval("clockTime()",1000);
+		</script>
+	</body>
+</html>
