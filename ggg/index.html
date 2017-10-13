@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>中秋节</title>
+	</head>
+	<style type="text/css">
+		body{
+			background: url(img/001.jpg)  /*no-repeat*/;
+			background-size: 100%;
+		}
+		#all{
+			width: 700px;
+			height: 350px;
+			margin-left: 300px;
+			margin-top: 100px;
+			position: relative;
+		}
+		#all h1{
+			font-family: "楷体";
+			text-align: center;
+			color: white;
+		}
+		.imga{
+			width: 200px;
+			height: 170px;
+			position: absolute;
+			top: 100px;
+			left: 30px;
+		}
+		.imga img{
+			width: 100%;
+			height: 100%;
+			border-radius: 30px;
+		}
+		#text{
+			width: 400px;
+			height: 210px;
+			font-family: "楷体";
+			position: absolute;
+			right: 10px;
+			top: 90px;
+			line-height: 1.5em;
+		}
+	</style>
+	<body>
+		<div id="all">
+			<h1>中秋节</h1>
+			<div class="imga"><img src="img/002.jpg"/></div>
+			<div id="text">
+				<p id="word">中秋节，是流行于中国众多民族与汉字文化圈诸国的传统文化节日，时在农历八月十五；因其恰值三秋之半，故名，也有些地方将中秋节定在八月十六。
+					中秋节自古便有祭月、赏月、拜月、吃月饼、赏桂花、饮桂花酒等习俗，流传至今，经久不息。中秋节以月之圆兆人之团圆，为寄托思念故乡，思念亲人之情，祈盼丰收、幸福，成为丰富多彩、弥足珍贵的文化遗产。中秋节与端午节、春节、清明节并称为中国四大传统节日。</p>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var oh1=document.querySelector("#word");
+			typing(oh1,100);
+			function typing(wd,speed){
+				var owd=wd;
+				var str=owd.innerHTML;
+				var i=0;
+				owd.innerText=" ";
+				
+				var a=setInterval(function(){
+					if(i<str.length){
+						owd.innerText+=str[i];
+					}
+					else{
+						clearInterval(a);
+					}
+					i++;
+				},speed)
+			}
+		</script>
+	</body>
+</html>
