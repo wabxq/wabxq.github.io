@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#chat {
+	width: 500px;
+	height: 600px;
+	border: 1px solid #000;
+	left: 400px;
+	top: 20px;
+	position: absolute;
+}
+
+#name {
+	width: 500px;
+	height: 100px;
+	background-color: blue;
+	position: relative;
+	top: 0;
+}
+
+#name div {
+	display: inline-block;
+}
+
+#logo1 {
+	width: 80px;
+	height: 85px;
+	display: inline-block;
+	font-size: 2em;
+	border-right: 1px solid darkblue;
+}
+
+i {
+	margin: 30px;
+}
+
+#logo2 {
+	display: inline-block;
+	font-size: 2em;
+	;
+	margin-left: 50px;
+}
+
+#other {
+	margin-left: 68px;
+}
+
+#name h1 {
+	text-align: center;
+	line-height: 100px;
+}
+
+#name span {
+	font-size: 17px;
+	color: darkgrey;
+}
+
+#send {
+	width: 500px;
+	height: 100px;
+	background-color: lightgray;
+	position: relative;
+	bottom: 0;
+}
+
+#Content {
+	width: 500px;
+	height: 400px;
+	background-color: white;
+	position: relative;
+	top: 100;
+}
+
+#send #text1 {
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 400px;
+	height: 50px;
+}
+
+#btn {
+	width: 40px;
+	height: 40px;
+}
