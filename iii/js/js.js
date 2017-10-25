@@ -30,13 +30,6 @@ window.onload = function() {
 		}
 
 	}
-
-	function clocktime(num) {
-		if(num < 10) {
-			num = "0" + num;
-		}
-		return num;
-	}
 	oEnter.onkeyup = function(ev) {
 		var ev = ev || event;
 		if(this.value != " ") {
