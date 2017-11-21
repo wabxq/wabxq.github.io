@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>数据增加与删除</title>
+	</head>
+		<style type="text/css">
+			body{
+				background-color: beige;
+			}
+			table{
+				border-collapse:collapse;
+				border: 1px solid #888;
+				width: 600px;		
+				margin: auto;
+				margin-top: 200px;
+				position: relative;
+			}
+			th,td{
+				border: 1px solid #888;
+				text-align: center;
+			}
+			input{
+				position: absolute;
+				top: 160px;
+				right: 510px;
+				background-color: cornflowerblue;
+				border: none;
+				width: 60px;
+				height: 30px;
+			}
+		</style>
+	<body>
+		<table id="Tables">
+			<tr>
+				<th>学号</th>
+				<th>姓名</th>
+				<th>性别</th>
+				<th>地址</th>
+				<th>删除</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>张三</td>
+				<td>男</td>
+				<td>绍兴</td>
+				<td><a href="javascript:">删除</a></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>李四</td>
+				<td>男</td>
+				<td>杭州</td>
+				<td><a href="javascript:">删除</a></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>王五</td>
+				<td>女</td>
+				<td>温州</td>
+				<td><a href="javascript:">删除</a></td>
+			</tr>
+		</table>
+		<input type="button" id="btnAdd" value="添加" />
+		<script type="text/javascript">
+			var tables=document.getElementById("Tables");
+			var btn=document.getElementsByTagName('input')[0];
+			var tds=document.querySelectorAll("td a");
+			
+			//删除操作
+			for (var i=0;i<tds.length;i++) {
+				tds[i].addEventListener("click",function(event){
+					event.target.parentNode.parentNode.parentNode.removeChild(event.target.parentNode.parentNode);
+				});
+			}
+			btn.addEventListener("click",add);
+			function add(){
+				var row=tables.insertRow(4);
+				var cell0=row.insertCell(0);
+				var cell1=row.insertCell(1);
+				var cell2=row.insertCell(2);
+				var cell3=row.insertCell(3);
+				var cell4=row.insertCell(4);
+				cell0.appendChild(document.createTextNode("4"));
+				cell1.appendChild(document.createTextNode("赵六"));
+				cell2.appendChild(document.createTextNode("男"));
+				cell3.appendChild(document.createTextNode("宁波"));
+				var Link=document.createElement('a');
+				Link.innerText="删除";
+				Link.setAttribute('href','#');
+				cell4.appendChild(Link);
+				Link.addEventListener("click",function(event){
+					event.target.parentNode.parentNode.parentNode.removeChild(event.target.parentNode.parentNode);
+				});
+			}
+		</script>
+	</body>
+
+</html>
