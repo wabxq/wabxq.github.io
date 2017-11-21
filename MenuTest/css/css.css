@@ -1,0 +1,64 @@
+body {
+  font-family:"楷体";
+  color: #fff;
+  background: url(../img/001.jpg) no-repeat center top;
+  background-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bar-menu {
+  height: 70px;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  background: rgba(0 ,206 ,209,.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+}
+
+.hamburger {
+  font-size: 24px;
+}
+
+.button {
+  transform: none;
+  cursor: pointer;
+  padding: 1em;
+  transition: .3s;
+}
+
+.side-menu {
+  display: none;
+  width: 100px;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, .26);
+  height: 100vh;
+  background: rgba(0 ,206 ,209,.4);
+}
+
+.menu {
+  cursor: pointer;
+  list-style: none;
+}
+
+.menu li {
+  background:rgba(0 ,206 ,209,.4);
+  padding: 1em 2em;
+}
+
+.menu-item {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-angle-right {
+  padding-left: .3em;
+}
